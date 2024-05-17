@@ -1,0 +1,35 @@
+<h1>Разместить объявление</h1>
+<form id='addCarsForm'>
+	<label for='brandId'>Марка авто:</label>
+	<select id='brandId' name='brandId' required></select><br /><br />
+
+	<label for='name'>Название:</label>
+	<input type='text' id='name' name='name' autocomplete='off' required /><br
+	/><br />
+
+	<label for='year'>Год:</label>
+	<input type='number' id='year' name='year' autocomplete='off' required /><br
+	/><br />
+
+	<label for='price'>Цена:</label>
+	<input type='number' id='price' name='price' autocomplete='off' required /><br
+	/><br />
+
+	<label for='description'>Описание:</label><br />
+	<textarea
+		id='description'
+		name='description'
+		rows='4'
+		cols='50'
+		autocomplete='off'
+	></textarea><br /><br />
+
+	<label for='photos'>Фотографии:</label>
+	<input type='file' id='photos' name='photos' accept='image/*' multiple /><br
+	/><br />
+
+	<button type='submit'>Добавить</button>
+	<div class='error-message' id='errorMessage'></div>
+</form>
+
+<script src='script/addCar.js'></script>

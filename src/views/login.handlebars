@@ -1,0 +1,30 @@
+<div class='container-auth'>
+	<h2>Авторизация</h2>
+	<form id='loginForm'>
+		<label for='phoneNumber'>Номер телефона:</label><br />
+		<input
+			type='text'
+			id='phoneNumber'
+			name='phoneNumber'
+			placeholder='+7(000)000-00-00'
+			required
+		/><br />
+		<label for='password'>Пароль:</label><br />
+		<input
+			type='password'
+			id='password'
+			name='password'
+			placeholder='Введите пароль'
+			minlength='6'
+			maxlength='12'
+			required
+		/><br /><br />
+		<button type='submit'>Войти</button>
+		<div class='error-message' id='errorMessage'></div>
+
+		<p>У вас нет учетной записи? <a href='/register'>Создать</a></p>
+	</form>
+</div>
+
+<script src='https://unpkg.com/imask'></script>
+<script src='script/login.js'></script>

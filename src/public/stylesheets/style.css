@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://unpkg.com/swiper/swiper-bundle.min.css');
+
+.root {
+	padding: 0 15px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Comfortaa', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+	font-weight: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.filter {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.filter span {
+	margin-right: 10px;
+}
+
+.filter ul {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+
+.filter ul li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.filter ul li.active {
+	color: red;
+}
+
+#carList {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.car-item {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.image-wrapper {
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
+
+.image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.car-details {
+	padding: 15px;
+}
+
+.photo-indicator {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	color: black;
+	order: 1;
+}
+
+.user-actions {
+	order: 2;
+}
+
+.user-actions a {
+	margin-left: 10px;
+}
+
+.user-actions {
+	display: flex;
+}
+
+.user-actions a {
+	margin-left: 10px;
+	padding: 8px 12px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+}
+
+.user-actions a:hover {
+	background-color: #0056b3;
+}
+
+h2 {
+	text-align: center;
+}
+label {
+	font-weight: bold;
+}
+input[type='text'],
+input[type='password'],
+button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+button {
+	background-color: #4caf50;
+	color: #fff;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #45a049;
+}
+.error-message {
+	color: red;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.container-auth {
+	margin: 50 auto;
+	width: 300px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type='text'],
+input[type='number'],
+textarea,
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.container-profile {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container-profile > h1,
+.container-profile > form,
+.container-profile > div {
+	margin-bottom: 20px;
+	border: 1px solid #ccc; /* Добавляем рамку */
+	padding: 20px; /* Добавляем отступ внутри блоков */
+	width: 400px;
+	border-radius: 10px;
+	margin: 0 50px;
+}
+
+.container-profile > form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-profile > form > input {
+	margin-bottom: 10px;
+}
+
+.container-profile > form > button {
+	margin-top: 10px;
+}
+
+#errorMessage {
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#message {
+	color: #45a049;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.container-cars {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.car-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container-cars > .car-item > .delete-button {
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	width: 100px;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.swiper-pagination {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+	width: 8px;
+	height: 8px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: rgba(255, 255, 255, 0.9);
+}

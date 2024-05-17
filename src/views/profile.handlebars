@@ -1,0 +1,36 @@
+<h1>Личный кабинет</h1>
+<div class='container-profile'>
+	<div id='userData'></div>
+	<form id='changePasswordForm'>
+		<h2>Сменить пароль</h2>
+		<input
+			type='password'
+			id='currentPassword'
+			placeholder='Текущий пароль'
+			minlength='6'
+			maxlength='12'
+			required
+		/>
+		<input
+			type='password'
+			id='newPassword'
+			placeholder='Новый пароль'
+			minlength='6'
+			maxlength='12'
+			required
+		/>
+		<button type='submit'>Изменить</button>
+		<div id='errorMessage'></div>
+		<div id='message'></div>
+	</form>
+</div>
+<h1>Активные объявления:</h1>
+<div class='container-cars'>
+</div>
+<div id='carListNone'></div>
+
+<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+
+<script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+
+<script src='script/profile.js'></script>
